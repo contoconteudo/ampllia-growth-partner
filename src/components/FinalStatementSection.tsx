@@ -53,12 +53,12 @@ const FinalStatementSection = () => {
   return (
     <section className="section-dark section-padding relative overflow-hidden">
       {/* Background growing bars */}
-      <div className="absolute inset-0 flex items-end justify-center gap-3 md:gap-6 opacity-[0.07] pointer-events-none px-10">
+      <div className="absolute inset-0 flex items-end justify-center gap-3 md:gap-6 opacity-20 pointer-events-none px-10">
         {bars.map((bar, i) => (
           <div
             key={i}
-            className="w-12 md:w-20 rounded-t-md bg-gradient-to-t from-accent to-secondary"
-            style={{ height: isVisible ? getBarHeight(i) : "0%" }}
+            className="w-12 md:w-20 rounded-t-md"
+            style={{ height: isVisible ? getBarHeight(i) : "0%", background: "linear-gradient(to top, #00CED6, #00b4bc)" }}
           />
         ))}
       </div>
