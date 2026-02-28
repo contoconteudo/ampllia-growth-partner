@@ -25,40 +25,15 @@ const Header = () => {
           <img src={amplliaLogoWhite} alt="Ampllia" className="h-8 md:h-10" />
         </a>
 
-        {/* Desktop CTA */}
         <a
           href={WA_LINK}
           target="_blank"
           rel="noopener noreferrer"
-          className="hidden md:inline-flex items-center px-6 py-2.5 rounded-lg bg-primary text-primary-foreground font-semibold text-sm hover:brightness-110 transition"
+          className="inline-flex items-center px-4 py-2 md:px-6 md:py-2.5 rounded-lg bg-primary text-primary-foreground font-semibold text-xs md:text-sm hover:brightness-110 transition"
         >
           Fale com a Ampllia
         </a>
-
-        {/* Mobile toggle */}
-        <button
-          onClick={() => setMenuOpen(!menuOpen)}
-          className="md:hidden text-text-on-navy"
-          aria-label="Menu"
-        >
-          {menuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
       </div>
-
-      {/* Mobile menu */}
-      {menuOpen && (
-        <div className="md:hidden bg-navy border-t border-navy-light px-5 pb-5">
-          <a
-            href={WA_LINK}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block w-full text-center px-6 py-3 rounded-lg bg-primary text-primary-foreground font-semibold text-sm"
-            onClick={() => setMenuOpen(false)}
-          >
-            Fale com a Ampllia
-          </a>
-        </div>
-      )}
     </header>
   );
 };
