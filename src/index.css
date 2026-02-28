@@ -35,8 +35,8 @@
     --radius: 0.5rem;
 
     /* Custom tokens */
-    --navy: 218 60% 12%;
-    --navy-light: 218 40% 20%;
+    --navy: 0 0% 0%;
+    --navy-light: 0 0% 10%;
     --surface-light: 0 0% 96%;
     --text-on-navy: 0 0% 100%;
     --text-on-navy-muted: 0 0% 75%;
