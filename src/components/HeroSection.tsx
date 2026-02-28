@@ -4,15 +4,15 @@ const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center section-dark overflow-hidden">
       {/* Background pattern */}
-      <div className="absolute inset-0 opacity-[0.07]" style={{
-        backgroundImage: `radial-gradient(circle at 1px 1px, hsl(var(--primary)) 1px, transparent 0)`,
+      <div className="absolute inset-0 opacity-[0.05]" style={{
+        backgroundImage: `radial-gradient(circle at 1px 1px, hsl(var(--accent)) 1px, transparent 0)`,
         backgroundSize: '40px 40px',
       }} />
       <div className="absolute inset-0 bg-gradient-to-br from-navy via-navy to-navy-light opacity-90" />
 
       <div className="relative container-page w-full pt-24 pb-16 md:pt-0">
         <div className="max-w-3xl mx-auto text-center">
-          <span className="inline-block px-4 py-1.5 rounded-full border border-primary/40 bg-primary/10 text-primary text-sm font-medium mb-8">
+          <span className="inline-block px-4 py-1.5 rounded-full border border-accent/40 bg-accent/10 text-accent text-sm font-medium mb-8">
             Gestão & Marketing para Saúde
           </span>
 

@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import amplliaLogo from "@/assets/ampllia-logo.png";
 
 const WA_LINK = "https://wa.me/5500000000000";
 
@@ -20,8 +21,8 @@ const Header = () => {
       }`}
     >
       <div className="container-page flex items-center justify-between h-16 md:h-20">
-        <a href="#" className="font-heading text-2xl font-bold text-text-on-navy tracking-tight">
-          Ampllia
+        <a href="#">
+          <img src={amplliaLogo} alt="Ampllia" className="h-8 md:h-10 brightness-0 invert" />
         </a>
 
         {/* Desktop CTA */}

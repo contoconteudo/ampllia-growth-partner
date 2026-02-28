@@ -8,7 +8,7 @@ const TurningPointSection = () => {
   return (
     <section className="section-gray section-padding">
       <div ref={ref} className={`container-narrow text-center transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-        <span className="text-primary text-sm font-semibold uppercase tracking-widest">
+        <span className="text-accent text-sm font-semibold uppercase tracking-widest">
           A Virada de Chave
         </span>
 

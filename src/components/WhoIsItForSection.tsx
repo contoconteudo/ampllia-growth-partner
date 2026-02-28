@@ -20,7 +20,7 @@ const WhoIsItForSection = () => {
     <section className="section-light section-padding">
       <div ref={ref} className={`container-page transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
         <div className="text-center mb-12">
-          <span className="text-primary text-sm font-semibold uppercase tracking-widest">
+          <span className="text-accent text-sm font-semibold uppercase tracking-widest">
             Para quem é a Ampllia?
           </span>
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground leading-tight mt-4">
@@ -34,7 +34,7 @@ const WhoIsItForSection = () => {
         <div className="grid sm:grid-cols-2 gap-x-8 gap-y-4 max-w-3xl mx-auto">
           {items.map((item, i) => (
             <div key={i} className="flex items-start gap-3">
-              <CheckCircle2 className="text-primary flex-shrink-0 mt-0.5" size={22} />
+              <CheckCircle2 className="text-accent flex-shrink-0 mt-0.5" size={22} />
               <p className="text-foreground text-base">{item}</p>
             </div>
           ))}

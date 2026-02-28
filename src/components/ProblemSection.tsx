@@ -7,7 +7,7 @@ const ProblemSection = () => {
   return (
     <section className="section-light section-padding">
       <div ref={ref} className={`container-page transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-        <span className="text-primary text-sm font-semibold uppercase tracking-widest">
+        <span className="text-accent text-sm font-semibold uppercase tracking-widest">
           O Problema Real do Mercado
         </span>
 
@@ -23,7 +23,6 @@ const ProblemSection = () => {
           </div>
 
           <div className="grid sm:grid-cols-2 gap-4">
-            {/* Card 1 - Chaos */}
             <div className="rounded-xl border border-destructive/20 bg-destructive/5 p-6">
               <div className="flex items-center gap-2 mb-4">
                 <TrendingDown className="text-destructive" size={20} />
@@ -36,10 +35,9 @@ const ProblemSection = () => {
               </ul>
             </div>
 
-            {/* Card 2 - Empty */}
-            <div className="rounded-xl border border-primary/20 bg-primary/5 p-6">
+            <div className="rounded-xl border border-accent/20 bg-accent/5 p-6">
               <div className="flex items-center gap-2 mb-4">
-                <TrendingUp className="text-primary" size={20} />
+                <TrendingUp className="text-accent" size={20} />
                 <h3 className="font-heading font-bold text-foreground">Do lado do vazio</h3>
               </div>
               <ul className="space-y-2.5 text-sm text-muted-foreground">

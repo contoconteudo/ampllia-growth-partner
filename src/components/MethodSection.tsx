@@ -31,7 +31,7 @@ const MethodSection = () => {
     <section className="section-dark section-padding">
       <div ref={ref} className={`container-page transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
         <div className="text-center mb-16">
-          <span className="text-primary text-sm font-semibold uppercase tracking-widest">
+          <span className="text-accent text-sm font-semibold uppercase tracking-widest">
             O Método Ampllia
           </span>
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-text-on-navy leading-tight mt-4">
@@ -44,17 +44,16 @@ const MethodSection = () => {
             <div key={i} className="relative">
               <div className="bg-navy-light/60 border border-text-on-navy/10 rounded-xl p-6 h-full flex flex-col">
                 <div className="flex items-center gap-3 mb-4">
-                  <span className="flex items-center justify-center w-10 h-10 rounded-full bg-primary/15 text-primary font-heading font-bold text-lg">
+                  <span className="flex items-center justify-center w-10 h-10 rounded-full bg-accent/15 text-accent font-heading font-bold text-lg">
                     {i + 1}
                   </span>
-                  <step.icon className="text-primary" size={22} />
+                  <step.icon className="text-accent" size={22} />
                 </div>
                 <h3 className="font-heading font-bold text-text-on-navy text-lg mb-2">{step.title}</h3>
                 <p className="text-text-on-navy-muted text-sm leading-relaxed">{step.desc}</p>
               </div>
-              {/* Connector arrow (desktop only) */}
               {i < steps.length - 1 && (
-                <div className="hidden lg:block absolute top-1/2 -right-3 transform -translate-y-1/2 text-primary/40 text-2xl">
+                <div className="hidden lg:block absolute top-1/2 -right-3 transform -translate-y-1/2 text-accent/40 text-2xl">
                   →
                 </div>
               )}
