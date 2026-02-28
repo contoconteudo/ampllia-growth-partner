@@ -7,7 +7,7 @@ const FinalCTASection = () => {
 
   return (
     <section className="section-padding relative overflow-hidden" style={{
-      background: '#E88C02',
+      background: '#00CED6',
     }}>
       <div ref={ref} className={`container-narrow text-center transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
         <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-black leading-tight mb-6">

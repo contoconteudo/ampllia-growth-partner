@@ -66,12 +66,9 @@ export default {
           DEFAULT: "hsl(var(--text-on-navy))",
           muted: "hsl(var(--text-on-navy-muted))",
         },
-        "brand-orange": "hsl(var(--brand-orange))",
-        "brand-gold": "hsl(var(--brand-gold))",
-        "brand-gray": {
-          DEFAULT: "hsl(var(--brand-gray))",
-          dark: "hsl(var(--brand-gray-dark))",
-        },
+        "brand-cyan": "hsl(var(--brand-cyan))",
+        "brand-teal": "hsl(var(--brand-teal))",
+        "brand-gray": "hsl(var(--brand-gray))",
       },
       borderRadius: {
         lg: "var(--radius)",
