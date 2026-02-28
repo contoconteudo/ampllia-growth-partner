@@ -1,5 +1,5 @@
 import { Instagram, MessageCircle } from "lucide-react";
-import amplliaLogo from "@/assets/ampllia-logo.png";
+import amplliaLogoWhite from "@/assets/ampllia-logo-white.png";
 
 const Footer = () => {
   return (
@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container-page">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="text-center md:text-left flex flex-col items-center md:items-start gap-3">
-            <img src={amplliaLogo} alt="Ampllia" className="h-10 brightness-0 invert" />
+            <img src={amplliaLogoWhite} alt="Ampllia" className="h-10" />
             <p className="text-text-on-navy-muted text-sm">
               Gestão e Marketing para Clínicas, Consultórios e Hospitais
             </p>
