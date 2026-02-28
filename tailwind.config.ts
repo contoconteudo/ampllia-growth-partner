@@ -66,6 +66,12 @@ export default {
           DEFAULT: "hsl(var(--text-on-navy))",
           muted: "hsl(var(--text-on-navy-muted))",
         },
+        "brand-orange": "hsl(var(--brand-orange))",
+        "brand-gold": "hsl(var(--brand-gold))",
+        "brand-gray": {
+          DEFAULT: "hsl(var(--brand-gray))",
+          dark: "hsl(var(--brand-gray-dark))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
