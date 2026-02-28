@@ -16,7 +16,7 @@ const HeroSection = () => {
             Gestão & Marketing para Saúde
           </span>
 
-          <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-text-on-navy leading-[1.1] mb-6">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-text-on-navy leading-[1.1] mb-6" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
             Crescer não é sobre aparecer mais.{" "}
             <span className="text-gradient">É sobre estruturar melhor.</span>
           </h1>
