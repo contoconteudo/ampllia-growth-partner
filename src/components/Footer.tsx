@@ -1,13 +1,14 @@
 import { Instagram, MessageCircle } from "lucide-react";
+import amplliaLogo from "@/assets/ampllia-logo.png";
 
 const Footer = () => {
   return (
     <footer className="bg-navy py-12">
       <div className="container-page">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-          <div className="text-center md:text-left">
-            <p className="font-heading text-xl font-bold text-text-on-navy">Ampllia</p>
-            <p className="text-text-on-navy-muted text-sm mt-1">
+          <div className="text-center md:text-left flex flex-col items-center md:items-start gap-3">
+            <img src={amplliaLogo} alt="Ampllia" className="h-10 brightness-0 invert" />
+            <p className="text-text-on-navy-muted text-sm">
               Gestão e Marketing para Clínicas, Consultórios e Hospitais
             </p>
           </div>
@@ -17,7 +18,7 @@ const Footer = () => {
               href="https://instagram.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-10 h-10 rounded-full bg-text-on-navy/10 flex items-center justify-center text-text-on-navy-muted hover:bg-primary hover:text-primary-foreground transition"
+              className="w-10 h-10 rounded-full bg-text-on-navy/10 flex items-center justify-center text-text-on-navy-muted hover:bg-accent hover:text-accent-foreground transition"
               aria-label="Instagram"
             >
               <Instagram size={18} />
@@ -26,7 +27,7 @@ const Footer = () => {
               href="https://wa.me/5500000000000"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-10 h-10 rounded-full bg-text-on-navy/10 flex items-center justify-center text-text-on-navy-muted hover:bg-primary hover:text-primary-foreground transition"
+              className="w-10 h-10 rounded-full bg-text-on-navy/10 flex items-center justify-center text-text-on-navy-muted hover:bg-accent hover:text-accent-foreground transition"
               aria-label="WhatsApp"
             >
               <MessageCircle size={18} />

@@ -15,8 +15,8 @@ const DifferentiatorSection = () => {
     <section className="section-light section-padding">
       <div ref={ref} className={`container-page transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
         <div className="grid md:grid-cols-5 gap-12 items-start">
-          <div className="md:col-span-3 md:border-l-4 md:border-primary md:pl-8">
-            <span className="text-primary text-sm font-semibold uppercase tracking-widest">
+          <div className="md:col-span-3 md:border-l-4 md:border-accent md:pl-8">
+            <span className="text-accent text-sm font-semibold uppercase tracking-widest">
               Por que a Ampllia é diferente?
             </span>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground leading-tight mt-4 mb-6">
@@ -33,7 +33,7 @@ const DifferentiatorSection = () => {
             <p className="text-foreground text-lg font-medium mb-4">
               Estruturamos o negócio por dentro para que o marketing faça sentido por fora.
             </p>
-            <p className="font-heading text-xl md:text-2xl font-bold text-primary mb-8">
+            <p className="font-heading text-xl md:text-2xl font-bold text-accent mb-8">
               A Ampllia é um parceiro estratégico.
             </p>
             <a
@@ -53,8 +53,8 @@ const DifferentiatorSection = () => {
                 <p className="text-sm text-muted-foreground mt-1">Agência genérica</p>
                 <p className="text-xs text-muted-foreground/60 mt-0.5">Posts + tráfego sem contexto</p>
               </div>
-              <div className="rounded-xl bg-primary/5 border border-primary/20 p-4 text-center">
-                <span className="text-primary font-bold text-lg">✓</span>
+              <div className="rounded-xl bg-accent/5 border border-accent/20 p-4 text-center">
+                <span className="text-accent font-bold text-lg">✓</span>
                 <p className="text-sm text-foreground font-semibold mt-1">Ampllia</p>
                 <p className="text-xs text-muted-foreground mt-0.5">Gestão + Marketing + Estratégia</p>
               </div>
