@@ -16,13 +16,13 @@
     --primary: 216 100% 50%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 216 30% 96%;
-    --secondary-foreground: 216 50% 10%;
+    --secondary: 38 94% 59%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 214 20% 96%;
-    --muted-foreground: 215 16% 47%;
+    --muted: 0 0% 95%;
+    --muted-foreground: 0 0% 53%;
 
-    --accent: 193 100% 42%;
+    --accent: 36 100% 48%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
@@ -30,16 +30,20 @@
 
     --border: 214 20% 90%;
     --input: 214 20% 90%;
-    --ring: 216 100% 50%;
+    --ring: 36 100% 48%;
 
     --radius: 0.5rem;
 
     /* Custom tokens */
     --navy: 218 60% 12%;
     --navy-light: 218 40% 20%;
-    --surface-light: 216 30% 97%;
+    --surface-light: 0 0% 96%;
     --text-on-navy: 0 0% 100%;
-    --text-on-navy-muted: 216 20% 75%;
+    --text-on-navy-muted: 0 0% 75%;
+    --brand-orange: 36 100% 48%;
+    --brand-gold: 38 94% 59%;
+    --brand-gray: 0 0% 62%;
+    --brand-gray-dark: 0 0% 53%;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
