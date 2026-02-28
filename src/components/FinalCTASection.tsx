@@ -7,18 +7,18 @@ const FinalCTASection = () => {
 
   return (
     <section className="section-padding relative overflow-hidden" style={{
-      background: 'linear-gradient(135deg, hsl(var(--navy)) 0%, hsl(var(--accent) / 0.15) 50%, hsl(var(--secondary) / 0.1) 100%)',
+      background: '#E88C02',
     }}>
       <div ref={ref} className={`container-narrow text-center transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-        <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-text-on-navy leading-tight mb-6">
+        <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-black leading-tight mb-6">
           Vamos ampliar seus resultados de forma inteligente?
         </h2>
-        <p className="text-text-on-navy-muted text-lg mb-10 max-w-xl mx-auto leading-relaxed">
+        <p className="text-black/80 text-lg mb-10 max-w-xl mx-auto leading-relaxed">
           Se sua clínica tem potencial, mas falta estrutura para escalar com segurança, 
           é hora de dar o próximo passo.
         </p>
 
-        <div className="w-16 h-px bg-accent/40 mx-auto mb-10" />
+        <div className="w-16 h-px bg-black/30 mx-auto mb-10" />
 
         <a
           href={WA_LINK}
