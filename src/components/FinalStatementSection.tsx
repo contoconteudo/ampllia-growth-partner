@@ -5,10 +5,10 @@ const FinalStatementSection = () => {
 
   const bars = [
     { height: "40%", delay: "0.3s" },
-    { height: "55%", delay: "0.5s" },
-    { height: "70%", delay: "0.7s" },
-    { height: "85%", delay: "0.9s" },
-    { height: "100%", delay: "1.1s" },
+    { height: "55%", delay: "1.0s" },
+    { height: "70%", delay: "1.7s" },
+    { height: "85%", delay: "2.4s" },
+    { height: "100%", delay: "3.1s" },
   ];
 
   return (
