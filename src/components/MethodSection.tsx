@@ -97,7 +97,7 @@ const MethodSection = () => {
                       animate={{
                         x: [0, -1, 1, -1, 0.5, -0.5, 0],
                         y: [0, 1, -1, 0.5, -1, 0.5, 0],
-                        rotate: -45,
+                        rotate: 45,
                       }}
                       transition={{
                         x: { duration: 0.4, repeat: Infinity, ease: "linear" },
