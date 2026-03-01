@@ -22,7 +22,7 @@ const FinalCTASection = () => {
           href={WA_LINK}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center px-10 py-5 rounded-lg bg-primary text-primary-foreground font-bold text-lg hover:brightness-110 transition shadow-xl shadow-primary/30"
+          className="inline-flex items-center px-10 py-5 rounded-lg bg-primary text-primary-foreground font-bold text-lg hover:brightness-110 transition shadow-xl shadow-primary/30 btn-pulse"
         >
           Quero uma análise estratégica da minha clínica
         </a>
