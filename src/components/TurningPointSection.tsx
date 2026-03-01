@@ -32,7 +32,7 @@ const TurningPointSection = () => {
           href={WA_LINK}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center mt-10 px-8 py-4 rounded-lg border-2 border-primary text-primary font-bold text-base hover:bg-primary hover:text-primary-foreground transition"
+          className="inline-flex items-center mt-10 px-8 py-4 rounded-lg border-2 border-primary text-primary font-bold text-base hover:bg-primary hover:text-primary-foreground transition btn-pulse"
         >
           Quero saber como a Ampllia pode me ajudar
         </a>

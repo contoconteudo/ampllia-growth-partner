@@ -36,7 +36,7 @@ const HeroSection = () => {
             href={WA_LINK}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center px-8 py-4 rounded-lg bg-primary text-primary-foreground font-bold text-base hover:brightness-110 transition shadow-lg shadow-primary/25"
+            className="inline-flex items-center px-8 py-4 rounded-lg bg-primary text-primary-foreground font-bold text-base hover:brightness-110 transition shadow-lg shadow-primary/25 btn-pulse"
           >
             Quero ampliar meus resultados com inteligência
           </a>
