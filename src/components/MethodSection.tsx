@@ -109,7 +109,7 @@ const MethodSection = () => {
                     </motion.div>
                   ) : i === 3 ? (
                     <motion.div
-                      animate={{ rotate: -360 }}
+                      animate={{ rotate: 360 }}
                       transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
                     >
                       <RefreshCcw className="text-accent" size={22} />
