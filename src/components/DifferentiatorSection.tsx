@@ -15,7 +15,7 @@ const DifferentiatorSection = () => {
     <section className="section-light section-padding">
       <div ref={ref} className={`container-page transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
         <div className="grid md:grid-cols-5 gap-12 items-start">
-          <div className="md:col-span-3 md:border-l-4 md:border-accent md:pl-8">
+          <div className="md:col-span-3 md:border-l-4 md:border-accent md:pl-8 text-center md:text-left">
             <span className="text-accent text-sm font-semibold uppercase tracking-widest">
               Por que a Ampllia é diferente?
             </span>
@@ -25,7 +25,7 @@ const DifferentiatorSection = () => {
             <p className="text-muted-foreground text-lg mb-4">
               Porque não somos "só" uma agência de marketing.
             </p>
-            <ul className="space-y-2 mb-6">
+            <ul className="space-y-2 mb-6 inline-block text-left">
               {negatives.map((item, i) => (
                 <li key={i} className="text-muted-foreground/60 line-through text-base">{item}</li>
               ))}
@@ -47,7 +47,7 @@ const DifferentiatorSection = () => {
           </div>
 
           <div className="md:col-span-2 flex items-center justify-center">
-            <div className="space-y-4 w-full max-w-xs">
+            <div className="space-y-4 w-full max-w-xs mx-auto">
               <div className="rounded-xl bg-destructive/5 border border-destructive/20 p-4 text-center">
                 <span className="text-destructive font-bold text-lg">✗</span>
                 <p className="text-sm text-muted-foreground mt-1">Agência genérica</p>
