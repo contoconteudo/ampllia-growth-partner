@@ -35,7 +35,7 @@ const FoundersSection = () => {
           {founders.map((f, i) => (
             <div key={i} className="bg-background rounded-2xl p-8 shadow-sm border border-border">
               <div className="flex items-center gap-4 mb-5">
-                <img src={i === 0 ? lucianaPhoto : lucianoPhoto} alt={f.name} className="w-16 h-16 rounded-full object-cover" />
+                <img src={i === 0 ? lucianaPhoto : lucianoPhoto} alt={f.name} className="w-24 h-24 rounded-full object-cover" />
                 <div>
                   <h3 className="font-heading font-bold text-foreground text-lg">{f.name}</h3>
                   <p className="text-accent text-sm font-medium">{f.title}</p>
