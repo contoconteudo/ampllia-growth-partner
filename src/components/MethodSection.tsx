@@ -90,7 +90,26 @@ const MethodSection = () => {
                   <span className="flex items-center justify-center w-10 h-10 rounded-full bg-accent/15 text-accent font-heading font-bold text-lg">
                     {i + 1}
                   </span>
-                  {i === 1 ? <BrainAtomCycle /> : <step.icon className={`text-accent ${i === 0 ? 'animate-spin' : ''}`} style={i === 0 ? { animationDuration: '3s' } : {}} size={22} />}
+                  {i === 1 ? (
+                    <BrainAtomCycle />
+                  ) : i === 2 ? (
+                    <motion.div
+                      animate={{
+                        x: [0, -1, 1, -1, 0.5, -0.5, 0],
+                        y: [0, 1, -1, 0.5, -1, 0.5, 0],
+                        rotate: -45,
+                      }}
+                      transition={{
+                        x: { duration: 0.4, repeat: Infinity, ease: "linear" },
+                        y: { duration: 0.4, repeat: Infinity, ease: "linear" },
+                        rotate: { duration: 0 },
+                      }}
+                    >
+                      <Rocket className="text-accent" size={22} />
+                    </motion.div>
+                  ) : (
+                    <step.icon className={`text-accent ${i === 0 ? 'animate-spin' : ''}`} style={i === 0 ? { animationDuration: '3s' } : {}} size={22} />
+                  )}
                 </div>
                 <h3 className="font-heading font-bold text-text-on-navy text-lg mb-2">{step.title}</h3>
                 <p className="text-text-on-navy-muted text-sm leading-relaxed">{step.desc}</p>
