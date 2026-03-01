@@ -47,7 +47,7 @@ const MethodSection = () => {
                   <span className="flex items-center justify-center w-10 h-10 rounded-full bg-accent/15 text-accent font-heading font-bold text-lg">
                     {i + 1}
                   </span>
-                  <step.icon className="text-accent" size={22} />
+                  <step.icon className={`text-accent ${i === 0 ? 'animate-spin' : ''}`} style={i === 0 ? { animationDuration: '3s' } : {}} size={22} />
                 </div>
                 <h3 className="font-heading font-bold text-text-on-navy text-lg mb-2">{step.title}</h3>
                 <p className="text-text-on-navy-muted text-sm leading-relaxed">{step.desc}</p>
