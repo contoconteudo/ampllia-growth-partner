@@ -3,52 +3,36 @@ import { useEffect, useState } from "react";
 
 const FinalStatementSection = () => {
   const { ref, isVisible } = useScrollAnimation(0.2);
-  const [cycle, setCycle] = useState(0);
+  const [barHeights, setBarHeights] = useState<number[]>([0, 0, 0, 0, 0]);
 
-  const bars = [
-    { height: "40%" },
-    { height: "55%" },
-    { height: "70%" },
-    { height: "85%" },
-    { height: "100%" },
-  ];
-
-  const barDuration = 600; // ms per bar grow
-  const totalGrow = bars.length * barDuration; // all bars grown
-  const holdTime = 800; // pause at full
+  const bars = [40, 55, 70, 85, 100];
+  const barDuration = 600;
+  const totalGrow = bars.length * barDuration;
+  const holdTime = 800;
   const cycleTime = totalGrow + holdTime;
-
-  useEffect(() => {
-    if (!isVisible) return;
-    const interval = setInterval(() => {
-      setCycle((c) => c + 1);
-    }, cycleTime);
-    return () => clearInterval(interval);
-  }, [isVisible, cycleTime]);
-
-  // Calculate which bar is active based on time within cycle
-  const [elapsed, setElapsed] = useState(0);
 
   useEffect(() => {
     if (!isVisible) return;
     let raf: number;
     let start: number | null = null;
+
     const animate = (ts: number) => {
       if (!start) start = ts;
-      setElapsed((ts - start) % cycleTime);
+      const elapsed = (ts - start) % cycleTime;
+
+      const newHeights = bars.map((maxH, index) => {
+        const barStart = index * barDuration;
+        const progress = Math.max(0, Math.min(1, (elapsed - barStart) / barDuration));
+        const eased = 1 - Math.pow(1 - progress, 3);
+        return eased * maxH;
+      });
+
+      setBarHeights(newHeights);
       raf = requestAnimationFrame(animate);
     };
     raf = requestAnimationFrame(animate);
     return () => cancelAnimationFrame(raf);
-  }, [isVisible, cycleTime]);
-
-  const getBarHeight = (index: number) => {
-    const barStart = index * barDuration;
-    const progress = Math.max(0, Math.min(1, (elapsed - barStart) / barDuration));
-    // Ease out cubic
-    const eased = 1 - Math.pow(1 - progress, 3);
-    return `${eased * parseFloat(bars[index].height)}%`;
-  };
+  }, [isVisible]);
 
   return (
     <section className="section-dark section-padding relative overflow-hidden">
@@ -58,7 +42,7 @@ const FinalStatementSection = () => {
           <div
             key={i}
             className="w-12 md:w-20 rounded-t-md"
-            style={{ height: isVisible ? getBarHeight(i) : "0%", background: "linear-gradient(to top, #00CED6, #00b4bc)" }}
+            style={{ height: isVisible ? `${barHeights[i]}%` : "0%", background: "linear-gradient(to top, hsl(var(--accent)), hsl(var(--brand-teal)))" }}
           />
         ))}
       </div>
