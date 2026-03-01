@@ -1,4 +1,3 @@
-import { Instagram, MessageCircle } from "lucide-react";
 import amplliaLogoWhite from "@/assets/ampllia-logo-white.png";
 
 const Footer = () => {
@@ -13,26 +12,6 @@ const Footer = () => {
             </p>
           </div>
 
-          <div className="flex items-center gap-4">
-            <a
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-10 h-10 rounded-full bg-text-on-navy/10 flex items-center justify-center text-text-on-navy-muted hover:bg-accent hover:text-accent-foreground transition"
-              aria-label="Instagram"
-            >
-              <Instagram size={18} />
-            </a>
-            <a
-              href="https://wa.me/5500000000000"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-10 h-10 rounded-full bg-text-on-navy/10 flex items-center justify-center text-text-on-navy-muted hover:bg-accent hover:text-accent-foreground transition"
-              aria-label="WhatsApp"
-            >
-              <MessageCircle size={18} />
-            </a>
-          </div>
         </div>
 
         <div className="border-t border-text-on-navy/10 mt-8 pt-6 text-center">
