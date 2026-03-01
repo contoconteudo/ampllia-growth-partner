@@ -1,6 +1,7 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { User } from "lucide-react";
 import lucianaPhoto from "@/assets/luciana-ferraz.webp";
+import lucianoPhoto from "@/assets/luciano-conde.webp";
 
 const founders = [
   {
@@ -34,13 +35,7 @@ const FoundersSection = () => {
           {founders.map((f, i) => (
             <div key={i} className="bg-background rounded-2xl p-8 shadow-sm border border-border">
               <div className="flex items-center gap-4 mb-5">
-                {i === 0 ? (
-                  <img src={lucianaPhoto} alt={f.name} className="w-16 h-16 rounded-full object-cover" />
-                ) : (
-                  <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center">
-                    <User className="text-accent" size={28} />
-                  </div>
-                )}
+                <img src={i === 0 ? lucianaPhoto : lucianoPhoto} alt={f.name} className="w-16 h-16 rounded-full object-cover" />
                 <div>
                   <h3 className="font-heading font-bold text-foreground text-lg">{f.name}</h3>
                   <p className="text-accent text-sm font-medium">{f.title}</p>
