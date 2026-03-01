@@ -1,5 +1,48 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { Settings, Brain, Rocket, RefreshCcw } from "lucide-react";
+import { Settings, Brain, Rocket, RefreshCcw, Atom } from "lucide-react";
+import { useEffect, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+
+const BrainAtomCycle = () => {
+  const [phase, setPhase] = useState<"brain" | "atom">("brain");
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setPhase((p) => (p === "brain" ? "atom" : "brain"));
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <div className="relative w-[22px] h-[22px]">
+      <AnimatePresence mode="wait">
+        {phase === "brain" ? (
+          <motion.div
+            key="brain"
+            initial={{ scale: 0.5, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            exit={{ scale: 1.5, opacity: 0 }}
+            transition={{ duration: 0.8, ease: "easeInOut" }}
+            className="absolute inset-0"
+          >
+            <Brain className="text-accent" size={22} />
+          </motion.div>
+        ) : (
+          <motion.div
+            key="atom"
+            initial={{ scale: 1.5, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            exit={{ scale: 0.5, opacity: 0 }}
+            transition={{ duration: 0.8, ease: "easeInOut" }}
+            className="absolute inset-0"
+          >
+            <Atom className="text-accent" size={22} />
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+};
 
 const steps = [
   {
@@ -47,7 +90,7 @@ const MethodSection = () => {
                   <span className="flex items-center justify-center w-10 h-10 rounded-full bg-accent/15 text-accent font-heading font-bold text-lg">
                     {i + 1}
                   </span>
-                  <step.icon className={`text-accent ${i === 0 ? 'animate-spin' : ''}`} style={i === 0 ? { animationDuration: '3s' } : {}} size={22} />
+                  {i === 1 ? <BrainAtomCycle /> : <step.icon className={`text-accent ${i === 0 ? 'animate-spin' : ''}`} style={i === 0 ? { animationDuration: '3s' } : {}} size={22} />}
                 </div>
                 <h3 className="font-heading font-bold text-text-on-navy text-lg mb-2">{step.title}</h3>
                 <p className="text-text-on-navy-muted text-sm leading-relaxed">{step.desc}</p>
