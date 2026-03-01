@@ -107,6 +107,13 @@ const MethodSection = () => {
                     >
                       <Rocket className="text-accent" size={22} />
                     </motion.div>
+                  ) : i === 3 ? (
+                    <motion.div
+                      animate={{ rotate: -360 }}
+                      transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
+                    >
+                      <RefreshCcw className="text-accent" size={22} />
+                    </motion.div>
                   ) : (
                     <step.icon className={`text-accent ${i === 0 ? 'animate-spin' : ''}`} style={i === 0 ? { animationDuration: '3s' } : {}} size={22} />
                   )}
